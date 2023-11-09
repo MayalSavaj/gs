@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #ff553e;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+img {
+  width: 100%;
+}
+
+
+/* .carousel-item{
+    height: 500px;
+}  */
+div#navbarSupportedContent {
+
+  place-content: flex-end;
+
+}
+
+.map-container {
+  overflow: hidden;
+  /* padding-bottom:0%; */
+  position: relative;
+  height: 0;
+  margin-bottom: 30px;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
+
+/* Change navbar styling on scroll */
+
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active {
+  color: var(--primary-color);
+}
